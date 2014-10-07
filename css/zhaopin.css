@@ -28,4 +28,4 @@ a {text-decoration: none;border: none;outline: none;}
 .dark_btn {background-color: #5d5d5d;color: #fee801;}
 .transmit {position: absolute;cursor: pointer;width: 50% !important;left: 25%;bottom: 5%;}
 
-.job_detail {width: 100%;height: 100%;position: fixed;top: 0;left: 0;background: url(../img/job-detail-bg.jpg) 0 0 / cover no-repeat;}
+.job_detail {display: none;width: 100%;height: 100%;position: fixed;top: 0;left: 0;background: url(../img/job-detail-bg.jpg) 0 0 / cover no-repeat;}
