@@ -29,3 +29,7 @@ a {text-decoration: none;border: none;outline: none;}
 .transmit {position: absolute;cursor: pointer;width: 50% !important;left: 25%;bottom: 5%;}
 
 .job_detail {display: none;width: 100%;height: 100%;position: fixed;top: 0;left: 0;background: url(../img/job-detail-bg.jpg) 0 0 / cover no-repeat;}
+.job_detail h2 {font-size: 21px;color: #5d5d5d;font-weight: bold;line-height: 56px;text-indent: 18px;transform: rotate(1deg);}
+.job_detail h5 {font-size: 15px;color: #fff;text-indent: 18px;line-height: 40px;}
+.job_detail p {font-size: 12px;color: #fff;text-indent: 0px;padding-left: 18px;line-height: 20px;}
+.close {position: absolute;width: 8.6%;bottom: 2%;left: 45.8%;}

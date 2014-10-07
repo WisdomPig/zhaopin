@@ -39,35 +39,60 @@
 		<section class="frame" id="frame06">
 			<div class="job_wrap">
 				<img src="img/job-f01.jpg">
-				<a id="pm" href="javascript:;" class="detail_btn light_btn" style="top: 80px;right: 80px;">详细</a>
-				<a id="bd" href="javascript:;" class="detail_btn dark_btn" style="top: 250px;left: 80px;">详细</a>
-				<a id="java" href="javascript:;" class="detail_btn light_btn" style="top: 400px;right: 80px;">详细</a>
+				<a data-id="pm" href="javascript:;" class="detail_btn light_btn" style="top: 80px;right: 80px;">详细</a>
+				<a data-id="bd" href="javascript:;" class="detail_btn dark_btn" style="top: 250px;left: 80px;">详细</a>
+				<a data-id="java" href="javascript:;" class="detail_btn light_btn" style="top: 400px;right: 80px;">详细</a>
 			</div>
 		</section>
 		<section class="frame" id="frame07">
 			<div class="job_wrap">
 				<img src="img/job-f02.jpg">
-				<a id="tester" href="javascript:;" class="detail_btn light_btn" style="top: 100px;right: 80px;">详细</a>
-				<a id="sem" href="javascript:;" class="detail_btn dark_btn" style="top: 260px;left: 80px;">详细</a>
-				<a id="bm" href="javascript:;" class="detail_btn light_btn" style="top: 410px;right: 80px;">详细</a>
+				<a data-id="tester" href="javascript:;" class="detail_btn light_btn" style="top: 100px;right: 80px;">详细</a>
+				<a data-id="sem" href="javascript:;" class="detail_btn dark_btn" style="top: 260px;left: 80px;">详细</a>
+				<a data-id="bm" href="javascript:;" class="detail_btn light_btn" style="top: 410px;right: 80px;">详细</a>
 			</div>
 		</section>
 		<section class="frame" id="frame08">
 			<div class="job_wrap">
 				<img src="img/job-f03.jpg">
-				<a id="editer" href="javascript:;" class="detail_btn light_btn" style="top: 100px;right: 80px;">详细</a>
-				<a id="adviser" href="javascript:;" class="detail_btn dark_btn" style="top: 260px;left: 80px;">详细</a>
+				<a data-id="editer" href="javascript:;" class="detail_btn light_btn" style="top: 100px;right: 80px;">详细</a>
+				<a data-id="adviser" href="javascript:;" class="detail_btn dark_btn" style="top: 260px;left: 80px;">详细</a>
 				<img src="img/transmit.png" class="transmit">
 			</div>
 		</section>
 		<div class="job_detail" data-job="pm"></div>
 		<div class="job_detail" data-job="bd"></div>
-		<div class="job_detail" data-job="java"></div>
+		<div class="job_detail" data-job="java">
+			<h2>JAVA高级开发工程师</h2>
+			<h5>岗位要求：</h5>
+			<p>1. 本科及以上学历计算机相关专业，五年以上JAVA开发经验；</p>
+			<p>2. 熟悉J2EE体系架构，熟悉java开源框架如Spring 、Hibernate 、JPA2.0、 Mybatis等；</p>
+			<p>3. 熟悉Linux或者Unix操作系统环境下Tomcat、nginx服务器配置；</p>
+			<p>4. 熟悉Javascript、JQuery等Web页面技术，熟练掌握HTML/XHTML/HTML5、CSS/CSS3，熟悉主流Web浏览器的开发模式和特性，对各大浏览器兼容性有清晰的了解；</p>
+			<p>5. 熟悉常用关系型数据库的实现(Mysql，Oracle，Mssql)</p>
+			<p>6. 有Tcp Socket、多线程开发经验及百万级以上数据量开发经验优先；</p>
+			<p>7. 具有大规模高并发访问的Web应用架构设计和开发经验；</p>
+			<p>8. 具良好的沟通能力和团队合作精神、能承受高强度的工作压力。</p>
+			<img src="img/close.png" class="close">
+		</div>
 		<div class="job_detail" data-job="tester"></div>
 		<div class="job_detail" data-job="sem"></div>
 		<div class="job_detail" data-job="bm"></div>
 		<div class="job_detail" data-job="editer"></div>
 		<div class="job_detail" data-job="adviser"></div>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript">
+		$(function() {
+			$('.detail_btn').click(function() {
+				var target = $('.job_detail[data-job="' + $(this).data('id') + '"]');
+
+				target.show();
+			});
+			$('.close').click(function() {
+				$(this).parent().hide();
+			});
+		});
+		</script>
 	</body>
 </html>
 
