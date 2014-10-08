@@ -16,10 +16,10 @@ a {text-decoration: none;border: none;outline: none;}
 #frame05 {background-color: #f7941e;}
 #frame02 img, #frame03 img, #frame04 img, #frame05 img {width: 100%;}
 .mt {padding-top: 2%;}
-.f_bt {position: absolute;bottom: 0;left: 5%;opacity: 0;}
-@-webkit-keyframes rotateAnim {0% {-webkit-transform:rotateX(90deg);transform:rotateX(90deg);opacity: 0;} 100% {-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity: 1;}}
-@keyframes rotateAnim {0% {-webkit-transform:rotateX(90deg);transform:rotateX(90deg);opacity: 0;} 100% {-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity: 1;}}
-.f_bt.animated {-webkit-animation: rotateAnim 0.5s ease-in 0.5s;animation: rotateAnim 0.5s ease-in 0.5s;-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity: 1;}
+.f_bt {position: absolute;bottom: 0;left: 5%;}
+@-webkit-keyframes rotateAnim {0% {-webkit-transform:rotateX(90deg);transform:rotateX(90deg);} 100% {-webkit-transform:rotateX(0deg);transform:rotateX(0deg);}}
+@keyframes rotateAnim {0% {-webkit-transform:rotateX(90deg);transform:rotateX(90deg);} 100% {-webkit-transform:rotateX(0deg);transform:rotateX(0deg);}}
+.f_bt.animated {-webkit-animation: rotateAnim 0.5s ease-in 0.5s;animation: rotateAnim 0.5s ease-in 0.5s;-webkit-transform:rotateX(0deg);transform:rotateX(0deg);}
 .f02_bt {width: 35.3% !important;}
 .f03_bt {width: 42.8% !important;}
 .f04_bt {width: 69.8% !important;}
