@@ -18,25 +18,19 @@
 			<img class="mt" src="img/f02-01.png">
 			<img class="mt" src="img/f02-02.png">
 			<img src="img/f02-03.png">
-			<div class="container">
-				<img class="f_bt f02_bt" src="img/f02-bt.png">
-			</div>
+			<div class="container" data-img="<img class='f_bt f02_bt' src='img/f02-bt.png'>"></div>
 		</section>
 		<section class="frame" id="frame03">
 			<img class="mt" src="img/f03-01.png">
 			<img class="mt" src="img/f03-02.png">
 			<img src="img/f03-03.png">
-			<div class="container">
-				<img class="f_bt f03_bt" src="img/f03-bt.png">
-			</div>
+			<div class="container" data-img="<img class='f_bt f03_bt' src='img/f03-bt.png'>"></div>
 		</section>
 		<section class="frame" id="frame04">
 			<img class="mt" src="img/f04-01.png">
 			<img class="mt" src="img/f04-02.png">
 			<img src="img/f04-03.png">
-			<div class="container">
-				<img class="f_bt f04_bt" src="img/f04-bt.png">
-			</div>
+			<div class="container" data-img="<img class='f_bt f04_bt' src='img/f04-bt.png'>"></div>
 		</section>
 		<section class="frame" id="frame05">
 			<img class="mt" src="img/f05-01.png">
@@ -161,15 +155,15 @@
 				$(this).parent().hide();
 			});
 
-			var targets = $('.f_bt'), winHeight = $(window).height();
+			var targets = $('.container'), winHeight = $(window).height();
 			$(window).scroll(function() {
 				var win = this;
 				targets.each(function() {
 					var _this = $(this),
 						top = _this.offset().top,
 						height = _this.height();
-					if (!_this.is('.animated') && (top - $(win).scrollTop()) < winHeight/2) {
-						_this.addClass('animated');
+					if (!_this.children().length && (top - $(win).scrollTop()) < winHeight/2 + 300) {
+						_this.html(_this.data('img'));
 					}
 				});
 			});

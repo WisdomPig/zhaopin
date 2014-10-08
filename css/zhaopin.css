@@ -65,13 +65,9 @@ a {text-decoration: none;border: none;outline: none;}
 	90% {-webkit-transform: translate3d(0, -5px, 0);transform: translate3d(0, -5px, 0);}
 	100% {-webkit-transform: none;transform: none;}
 }
-.f_bt {opacity: 0;}
-.f02_bt {width: 35.3% !important;} 
-.f03_bt {width: 42.8% !important;}
-.f04_bt {width: 69.8% !important;}
-.f02_bt.animated {-webkit-animation: bounceInTop 1s linear 0.5s;animation: bounceInTop 1s linear 0.5s;opacity: 1;}
-.f03_bt.animated {-webkit-animation: bounceInLeft 1s linear 0.5s;animation: bounceInLeft 1s linear 0.5s;opacity: 1;}
-.f04_bt.animated {-webkit-animation: bounceInBottom 1s linear 0.5s;animation: bounceInBottom 1s linear 0.5s;opacity: 1;}
+.f02_bt {width: 35.3% !important;-webkit-animation: bounceInTop 1s linear 0.5s;animation: bounceInTop 1s linear 0.5s;} 
+.f03_bt {width: 42.8% !important;-webkit-animation: bounceInLeft 1s linear 0.5s;animation: bounceInLeft 1s linear 0.5s;}
+.f04_bt {width: 69.8% !important;-webkit-animation: bounceInBottom 1s linear 0.5s;animation: bounceInBottom 1s linear 0.5s;}
 
 .job_wrap {position: relative;}
 .job_wrap img {width: 100%;}
