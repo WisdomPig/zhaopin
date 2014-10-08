@@ -1,6 +1,6 @@
-#frame01 {background: url(../img/index-bg.jpg) 0 0 / cover no-repeat;}
-.logo {width: 52.5%;padding-top: 2%;margin-left: 2%;}
-.banner {width: 100%;margin-top: 12.8%;}
+#frame01 {background-color: #fee801;}
+.logo {width: 47%;padding-top: 2%;margin-left: 2%;}
+.banner {width: 91.25%;margin-top: 3.5%;margin-left: 4.35%;}
 #frame02 {background-color: #14a2d4;} 
 #frame03 {background-color: #af5e9c;}
 #frame04 {background-color: #00b16a;}
