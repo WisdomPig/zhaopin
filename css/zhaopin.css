@@ -14,16 +14,16 @@
 .f04_bt {width: 40% !important;margin-left: 12%;}
 
 .job_wrap {position: relative;width: 100%;height: 100%;background-color: #fee801;}
-.dark_bg {position: absolute;width: 100%;height: 44.5%;background-color: #5d5d5d;top: 16%;left: 0;z-index: 9;}
+.dark_bg {position: absolute;width: 100%;height: 46.5%;background-color: #5d5d5d;top: 16%;left: 0;z-index: 9;}
 .job_top {position: absolute;z-index: 10;top: 6.6%;left: 0;display: inline-block;}
 .job_top h2 {color: #5d5d5d;font-size: 2.14em;line-height: 1.5em;font-weight: bold;border-top: 1px solid #5d5d5d;border-right: 1px solid #5d5d5d;border-radius: 0 10px 0 0;}
 .job_top p {font-size: 1em;color: #fff;}
-.job_bottom {position: absolute;z-index: 10;top: 50.6%;right: 0;display: inline-block;}
+.job_bottom {position: absolute;z-index: 10;top: 52.6%;right: 0;display: inline-block;}
 .job_bottom h2 {color: #fee801;font-size: 2.14em;line-height: 1.5em;font-weight: bold;border-top: 1px solid #fee801;border-left: 1px solid #fee801;border-radius: 10px 0 0 0;}
 .job_bottom p {font-size: 1em;color: #5d5d5d;text-align: right;}
 .detail_btn {position: absolute;z-index: 11;width: 45px;height: 45px;border-radius: 50%;line-height: 45px;text-align: center;}
 .light_btn {background-color: #fee801;color: #5d5d5d;top: 25%;right: 10%;}
-.dark_btn {background-color: #5d5d5d;color: #fee801;top: 69%;left: 10%;}
+.dark_btn {background-color: #5d5d5d;color: #fee801;top: 71%;left: 10%;}
 
 .job_detail {display: none;width: 100%;height: 100%;position: fixed;top: 0;left: 0;background-color: #5d5d5d;z-index: 999;}
 .job_detail h2 {font-size: 21px;color: #5d5d5d;font-weight: bold;line-height: 40px;text-indent: 18px;background-color: #fee801;}
