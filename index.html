@@ -6,63 +6,70 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" type="text/css" href="css/parallax.css">
+		<link rel="stylesheet" type="text/css" href="css/parallax-animation.css">
 		<link rel="stylesheet" type="text/css" href="css/zhaopin.css">
 	</head>
 	<body>
-		<img style="display: none;" src="img/f02-bt.png">
-		<img style="display: none;" src="img/f03-bt.png">
-		<img style="display: none;" src="img/f04-bt.png">
-		<section class="frame" id="frame01">
-			<img src="img/logo.png" class="logo">
-			<img src="img/index-front.png" class="banner">
-			<img src="img/index-next-frame.png" class="next">
-		</section>
-		<section class="frame" id="frame02">
-			<img class="mt" src="img/f02-01.png">
-			<img class="mt" src="img/f02-02.png">
-			<img src="img/f02-03.png">
-			<div class="container" data-img="<img class='f_bt f02_bt' src='img/f02-bt.png'>"></div>
-		</section>
-		<section class="frame" id="frame03">
-			<img class="mt" src="img/f03-01.png">
-			<img class="mt" src="img/f03-02.png">
-			<img src="img/f03-03.png">
-			<div class="container" data-img="<img class='f_bt f03_bt' src='img/f03-bt.png'>"></div>
-		</section>
-		<section class="frame" id="frame04">
-			<img class="mt" src="img/f04-01.png">
-			<img class="mt" src="img/f04-02.png">
-			<img src="img/f04-03.png">
-			<div class="container" data-img="<img class='f_bt f04_bt' src='img/f04-bt.png'>"></div>
-		</section>
-		<section class="frame" id="frame05">
-			<img class="mt" src="img/f05-01.png">
-			<img src="img/f05-02.png">
-		</section>
-		<section class="frame" id="frame06">
-			<div class="job_wrap">
-				<img src="img/job-f01.jpg">
-				<a data-id="pm" href="javascript:;" class="detail_btn light_btn" style="top: 80px;right: 80px;">详细</a>
-				<a data-id="bd" href="javascript:;" class="detail_btn dark_btn" style="top: 250px;left: 80px;">详细</a>
-				<a data-id="java" href="javascript:;" class="detail_btn light_btn" style="top: 400px;right: 80px;">详细</a>
+		<div class="wrapper">
+			<div class="pages">
+				<section class="page" id="frame01">
+					<img src="img/logo.png" class="logo">
+					<img src="img/index-front.png" class="banner">
+				</section>
+				<section class="page" id="frame02">
+					<img class="mt" src="img/f02-01.png">
+					<img class="mt" src="img/f02-02.png">
+					<img src="img/f02-03.png">
+					<div class="container">
+						<img class="f02_bt" data-animation="slideToBottom" data-timing-function="ease-in" src="img/f02-bt.png">
+					</div>
+				</section>
+				<section class="page" id="frame03">
+					<img class="mt" src="img/f03-01.png">
+					<img class="mt" src="img/f03-02.png">
+					<img src="img/f03-03.png">
+					<div class="container">
+						<img class="f03_bt" data-animation="slideToRight" data-timing-function="ease-in" src="img/f03-bt.png">
+					</div>
+				</section>
+				<section class="page" id="frame04">
+					<img class="mt" src="img/f04-01.png">
+					<img class="mt" src="img/f04-02.png">
+					<img src="img/f04-03.png">
+					<div class="container">
+						<img class="f04_bt" data-animation="slideToTop" data-timing-function="ease-in" src="img/f04-bt.png">
+					</div>
+				</section>
+				<section class="page" id="frame05">
+					<img class="mt" src="img/f05-01.png">
+					<img src="img/f05-02.png">
+				</section>
+				<section class="page" id="frame06">
+					<div class="job_wrap">
+						<img src="img/job-f01.jpg">
+						<a data-id="pm" href="javascript:;" class="detail_btn light_btn" style="top: 80px;right: 80px;">详细</a>
+						<a data-id="bd" href="javascript:;" class="detail_btn dark_btn" style="top: 250px;left: 80px;">详细</a>
+						<a data-id="java" href="javascript:;" class="detail_btn light_btn" style="top: 400px;right: 80px;">详细</a>
+					</div>
+				</section>
+				<section class="page" id="frame07">
+					<div class="job_wrap">
+						<img src="img/job-f02.jpg">
+						<a data-id="tester" href="javascript:;" class="detail_btn light_btn" style="top: 100px;right: 80px;">详细</a>
+						<a data-id="sem" href="javascript:;" class="detail_btn dark_btn" style="top: 260px;left: 80px;">详细</a>
+						<a data-id="bm" href="javascript:;" class="detail_btn light_btn" style="top: 410px;right: 80px;">详细</a>
+					</div>
+				</section>
+				<section class="page" id="frame08">
+					<div class="job_wrap">
+						<img src="img/job-f03.jpg">
+						<a data-id="editer" href="javascript:;" class="detail_btn light_btn" style="top: 100px;right: 80px;">详细</a>
+						<a data-id="adviser" href="javascript:;" class="detail_btn dark_btn" style="top: 260px;left: 80px;">详细</a>
+					</div>
+				</section>
 			</div>
-		</section>
-		<section class="frame" id="frame07">
-			<div class="job_wrap">
-				<img src="img/job-f02.jpg">
-				<a data-id="tester" href="javascript:;" class="detail_btn light_btn" style="top: 100px;right: 80px;">详细</a>
-				<a data-id="sem" href="javascript:;" class="detail_btn dark_btn" style="top: 260px;left: 80px;">详细</a>
-				<a data-id="bm" href="javascript:;" class="detail_btn light_btn" style="top: 410px;right: 80px;">详细</a>
-			</div>
-		</section>
-		<section class="frame" id="frame08">
-			<div class="job_wrap">
-				<img src="img/job-f03.jpg">
-				<a data-id="editer" href="javascript:;" class="detail_btn light_btn" style="top: 100px;right: 80px;">详细</a>
-				<a data-id="adviser" href="javascript:;" class="detail_btn dark_btn" style="top: 260px;left: 80px;">详细</a>
-				<img src="img/transmit.png" class="transmit">
-			</div>
-		</section>
+		</div>
 		<div class="job_detail" data-job="pm">
 			<h2>互联网产品经理</h2>
 			<h5>岗位要求：</h5>
@@ -146,7 +153,8 @@
 			<p>5. 电脑操作熟练，熟悉word、excel等办公软件。</p>
 			<img src="img/close.png" class="close">
 		</div>
-		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/parallax.js"></script>
 		<script type="text/javascript">
 		$(function() {
 			$('.detail_btn').click(function() {
@@ -158,18 +166,7 @@
 				$(this).parent().hide();
 			});
 
-			var targets = $('.container'), winHeight = $(window).height();
-			$(window).scroll(function() {
-				var win = this;
-				targets.each(function() {
-					var _this = $(this),
-						top = _this.offset().top,
-						height = _this.height();
-					if (!_this.children().length && (top - $(win).scrollTop()) < winHeight/2 + 500) {
-						_this.html(_this.data('img'));
-					}
-				});
-			});
+			$('.pages').parallax();
 		});
 		</script>
 	</body>

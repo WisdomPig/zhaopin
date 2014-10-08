@@ -1,15 +1,7 @@
-* {margin: 0;padding: 0;box-sizing: border-box;}
-html, body {width: 100%;height: 100%;}
-body {overflow-x: hidden;background-color: #fff;color: #000;font-family: "microsoft yahei", "Helvetica Neue", Verdana, Arial, Helvetica, sans-serif;}
-img {border: none;display: block;}
-a {text-decoration: none;border: none;outline: none;}
-
-.frame {position: relative;}
+.page {width: 100%;height: 100%;}
 #frame01 {background: url(../img/index-bg.jpg) 0 0 / cover no-repeat;}
 .logo {width: 52.5%;padding-top: 2%;margin-left: 2%;}
 .banner {width: 100%;margin-top: 12.8%;}
-.next {width: 31.7%;margin-left: 36%;padding: 5% 0;}
-
 #frame02 {background-color: #14a2d4;} 
 #frame03 {background-color: #af5e9c;}
 #frame04 {background-color: #00b16a;}
@@ -17,66 +9,17 @@ a {text-decoration: none;border: none;outline: none;}
 #frame02 img, #frame03 img, #frame04 img, #frame05 img {width: 100%;}
 .mt {padding-top: 2%;}
 .container {position: absolute;bottom: 0;left: 5%;width: 100%;}
-@-webkit-keyframes bounceInTop {
-	0%, 60%, 75%, 90%, 100% {-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);}
-	0% {opacity: 0;-webkit-transform: translate3d(0, -3000px, 0);transform: translate3d(0, -3000px, 0);}
-	60% {opacity: 1;-webkit-transform: translate3d(0, -20px, 0);transform: translate3d(0, -20px, 0);}
-	75% {-webkit-transform: translate3d(0, 10px, 0);transform: translate3d(0, 10px, 0);}
-	90% {-webkit-transform: translate3d(0, -5px, 0);transform: translate3d(0, -5px, 0);}
-	100% {-webkit-transform: none;transform: none;}
-}
-@keyframes bounceInTop {
-	0%, 60%, 75%, 90%, 100% {-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);}
-	0% {opacity: 0;-webkit-transform: translate3d(0, -3000px, 0);transform: translate3d(0, -3000px, 0);}
-	60% {opacity: 1;-webkit-transform: translate3d(0, -20px, 0);transform: translate3d(0, -20px, 0);}
-	75% {-webkit-transform: translate3d(0, 10px, 0);transform: translate3d(0, 10px, 0);}
-	90% {-webkit-transform: translate3d(0, -5px, 0);transform: translate3d(0, -5px, 0);}
-	100% {-webkit-transform: none;transform: none;}
-}
-@-webkit-keyframes bounceInLeft {
-	0%, 60%, 75%, 90%, 100% {-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);}
-	0% {opacity: 0;-webkit-transform: translate3d(-3000px, 0, 0);transform: translate3d(-3000px, 0, 0);}
-	60% {opacity: 1;-webkit-transform: translate3d(-25px, 0, 0);transform: translate3d(-25px, 0, 0);}
-	75% {-webkit-transform: translate3d(10px, 0, 0);transform: translate3d(10px, 0, 0);}
-	90% {-webkit-transform: translate3d(-5px, 0, 0);transform: translate3d(-5px, 0, 0);}
-	100% {-webkit-transform: none;transform: none;}
-}
-@keyframes bounceInLeft {
-	0%, 60%, 75%, 90%, 100% {-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);}
-	0% {opacity: 0;-webkit-transform: translate3d(0, 3000px, 0);transform: translate3d(0, 3000px, 0);}
-	60% {opacity: 1;-webkit-transform: translate3d(0, -20px, 0);transform: translate3d(0, -20px, 0);}
-	75% {-webkit-transform: translate3d(0, 10px, 0);transform: translate3d(0, 10px, 0);}
-	90% {-webkit-transform: translate3d(0, -5px, 0);transform: translate3d(0, -5px, 0);}
-	100% {-webkit-transform: none;transform: none;}
-}
-@-webkit-keyframes bounceInBottom {
-	0%, 60%, 75%, 90%, 100% {-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);}
-	0% {opacity: 0;-webkit-transform: translate3d(0, 3000px, 0);transform: translate3d(0, 3000px, 0);}
-	60% {opacity: 1;-webkit-transform: translate3d(0, -20px, 0);transform: translate3d(0, -20px, 0);}
-	75% {-webkit-transform: translate3d(0, 10px, 0);transform: translate3d(0, 10px, 0);}
-	90% {-webkit-transform: translate3d(0, -5px, 0);transform: translate3d(0, -5px, 0);}
-	100% {-webkit-transform: none;transform: none;}
-}
-@keyframes bounceInBottom {
-	0%, 60%, 75%, 90%, 100% {-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);}
-	0% {opacity: 0;-webkit-transform: translate3d(0, 3000px, 0);transform: translate3d(0, 3000px, 0);}
-	60% {opacity: 1;-webkit-transform: translate3d(0, -20px, 0);transform: translate3d(0, -20px, 0);}
-	75% {-webkit-transform: translate3d(0, 10px, 0);transform: translate3d(0, 10px, 0);}
-	90% {-webkit-transform: translate3d(0, -5px, 0);transform: translate3d(0, -5px, 0);}
-	100% {-webkit-transform: none;transform: none;}
-}
-.f02_bt {width: 35.3% !important;-webkit-animation: bounceInTop 1s linear 0s;animation: bounceInTop 1s linear 0s;} 
-.f03_bt {width: 42.8% !important;-webkit-animation: bounceInLeft 1s linear 0s;animation: bounceInLeft 1s linear 0s;}
-.f04_bt {width: 69.8% !important;-webkit-animation: bounceInBottom 1s linear 0s;animation: bounceInBottom 1s linear 0s;}
+.f02_bt {width: 35.3% !important;} 
+.f03_bt {width: 42.8% !important;}
+.f04_bt {width: 69.8% !important;}
 
 .job_wrap {position: relative;}
 .job_wrap img {width: 100%;}
 .detail_btn {position: absolute;width: 45px;height: 45px;border-radius: 50%;line-height: 45px;text-align: center;}
 .light_btn {background-color: #fee801;color: #5d5d5d;}
 .dark_btn {background-color: #5d5d5d;color: #fee801;}
-.transmit {position: absolute;cursor: pointer;width: 50% !important;left: 25%;bottom: 5%;}
 
-.job_detail {display: none;width: 100%;height: 100%;position: fixed;top: 0;left: 0;background: url(../img/job-detail-bg.jpg) 0 0 / cover no-repeat;}
+.job_detail {display: none;width: 100%;height: 100%;position: fixed;top: 0;left: 0;background: url(../img/job-detail-bg.jpg) 0 0 / cover no-repeat;z-index: 999;}
 .job_detail h2 {font-size: 21px;color: #5d5d5d;font-weight: bold;line-height: 56px;text-indent: 18px;-webkit-transform: rotate(1deg);-moz-transform: rotate(1deg);-o-transform: rotate(1deg);-ms-transform: rotate(1deg);transform: rotate(1deg);}
 .job_detail h5 {font-size: 15px;color: #fff;text-indent: 18px;line-height: 40px;}
 .job_detail p {font-size: 12px;color: #fff;text-indent: 0px;padding-left: 18px;line-height: 20px;}
