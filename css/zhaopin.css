@@ -18,7 +18,6 @@ a {text-decoration: none;border: none;outline: none;}
 .mt {padding-top: 2%;}
 .stage {position: absolute;bottom: 0;left: 5%;width: 100%;-webkit-perspective: 1200px;-moz-perspective: 1200px;-ms-perspective: 1200px;-o-perspective: 1200px;perspective: 1200px;}
 .container {-webkit-transform-style: preserve-3d;-moz-transform-style: preserve-3d;-ms-transform-style: preserve-3d;-o-transform-style: preserve-3d;transform-style: preserve-3d;}
-.f_bt {-webkit-transform:rotateX(90deg);transform:rotateX(90deg);}
 @-webkit-keyframes rotateAnim {0% {-webkit-transform:rotateX(90deg);transform:rotateX(90deg);} 100% {-webkit-transform:rotateX(0deg);transform:rotateX(0deg);}}
 @keyframes rotateAnim {0% {-webkit-transform:rotateX(90deg);transform:rotateX(90deg);} 100% {-webkit-transform:rotateX(0deg);transform:rotateX(0deg);}}
 .f_bt.animated {-webkit-animation: rotateAnim 0.5s ease-in 0.5s;animation: rotateAnim 0.5s ease-in 0.5s;-webkit-transform:rotateX(0deg);transform:rotateX(0deg);}
