@@ -168,7 +168,7 @@
 					var _this = $(this),
 						top = _this.offset().top,
 						height = _this.height();
-					if (!_this.is('.animated') && (top - $(win).scrollTop()) < winHeight/2 + 200) {
+					if (!_this.is('.animated') && (top - $(win).scrollTop()) < winHeight/2) {
 						_this.addClass('animated');
 					}
 				});
