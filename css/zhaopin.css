@@ -1,4 +1,3 @@
-.page {width: 100%;height: 100%;}
 #frame01 {background: url(../img/index-bg.jpg) 0 0 / cover no-repeat;}
 .logo {width: 52.5%;padding-top: 2%;margin-left: 2%;}
 .banner {width: 100%;margin-top: 12.8%;}
@@ -20,7 +19,7 @@
 .dark_btn {background-color: #5d5d5d;color: #fee801;}
 
 .job_detail {display: none;width: 100%;height: 100%;position: fixed;top: 0;left: 0;background: url(../img/job-detail-bg.jpg) 0 0 / cover no-repeat;z-index: 999;}
-.job_detail h2 {font-size: 21px;color: #5d5d5d;font-weight: bold;line-height: 56px;text-indent: 18px;-webkit-transform: rotate(1deg);-moz-transform: rotate(1deg);-o-transform: rotate(1deg);-ms-transform: rotate(1deg);transform: rotate(1deg);}
+.job_detail h2 {font-size: 21px;color: #5d5d5d;font-weight: bold;line-height: 56px;text-indent: 18px;}
 .job_detail h5 {font-size: 15px;color: #fff;text-indent: 18px;line-height: 40px;}
 .job_detail p {font-size: 12px;color: #fff;text-indent: 0px;padding-left: 18px;line-height: 20px;}
 .close {position: absolute;width: 8.6%;bottom: 2%;left: 45.8%;}
