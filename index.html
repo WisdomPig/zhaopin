@@ -9,9 +9,6 @@
 		<link rel="stylesheet" type="text/css" href="css/zhaopin.css">
 	</head>
 	<body>
-		<img style="display: none;" src="img/f02-bt.png">
-		<img style="display: none;" src="img/f03-bt.png">
-		<img style="display: none;" src="img/f04-bt.png">
 		<section class="frame" id="frame01">
 			<img src="img/logo.png" class="logo">
 			<img src="img/index-front.png" class="banner">
@@ -165,7 +162,7 @@
 					var _this = $(this),
 						top = _this.offset().top,
 						height = _this.height();
-					if (!_this.children().length && (top - $(win).scrollTop()) < winHeight/2 + 300) {
+					if (!_this.children().length && (top - $(win).scrollTop()) < winHeight/2 + 500) {
 						_this.html(_this.data('img'));
 					}
 				});
