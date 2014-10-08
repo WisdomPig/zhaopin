@@ -17,9 +17,27 @@ a {text-decoration: none;border: none;outline: none;}
 #frame02 img, #frame03 img, #frame04 img, #frame05 img {width: 100%;}
 .mt {padding-top: 2%;}
 .f_bt {position: absolute;bottom: 0;left: 5%;}
-@-webkit-keyframes rotateAnim {0% {-webkit-transform:rotateX(90deg);transform:rotateX(90deg);} 100% {-webkit-transform:rotateX(0deg);transform:rotateX(0deg);}}
-@keyframes rotateAnim {0% {-webkit-transform:rotateX(90deg);transform:rotateX(90deg);} 100% {-webkit-transform:rotateX(0deg);transform:rotateX(0deg);}}
-.f_bt.animated {-webkit-animation: rotateAnim 0.5s ease-in 0.5s;animation: rotateAnim 0.5s ease-in 0.5s;-webkit-transform:rotateX(0deg);transform:rotateX(0deg);}
+@-webkit-keyframes rotateAnim {
+	0% {-webkit-transform:rotateX(90deg);-moz-transform:rotateX(90deg);-o-transform:rotateX(90deg);-ms-transform:rotateX(90deg);transform:rotateX(90deg);} 
+	100% {-webkit-transform:rotateX(0deg);-moz-transform:rotateX(0deg);-o-transform:rotateX(0deg);-ms-transform:rotateX(0deg);transform:rotateX(0deg);}
+}
+@-moz-keyframes rotateAnim {
+	0% {-webkit-transform:rotateX(90deg);-moz-transform:rotateX(90deg);-o-transform:rotateX(90deg);-ms-transform:rotateX(90deg);transform:rotateX(90deg);} 
+	100% {-webkit-transform:rotateX(0deg);-moz-transform:rotateX(0deg);-o-transform:rotateX(0deg);-ms-transform:rotateX(0deg);transform:rotateX(0deg);}
+}
+@-o-keyframes rotateAnim {
+	0% {-webkit-transform:rotateX(90deg);-moz-transform:rotateX(90deg);-o-transform:rotateX(90deg);-ms-transform:rotateX(90deg);transform:rotateX(90deg);} 
+	100% {-webkit-transform:rotateX(0deg);-moz-transform:rotateX(0deg);-o-transform:rotateX(0deg);-ms-transform:rotateX(0deg);transform:rotateX(0deg);}
+}
+@-ms-keyframes rotateAnim {
+	0% {-webkit-transform:rotateX(90deg);-moz-transform:rotateX(90deg);-o-transform:rotateX(90deg);-ms-transform:rotateX(90deg);transform:rotateX(90deg);} 
+	100% {-webkit-transform:rotateX(0deg);-moz-transform:rotateX(0deg);-o-transform:rotateX(0deg);-ms-transform:rotateX(0deg);transform:rotateX(0deg);}
+}
+@keyframes rotateAnim {
+	0% {-webkit-transform:rotateX(90deg);-moz-transform:rotateX(90deg);-o-transform:rotateX(90deg);-ms-transform:rotateX(90deg);transform:rotateX(90deg);} 
+	100% {-webkit-transform:rotateX(0deg);-moz-transform:rotateX(0deg);-o-transform:rotateX(0deg);-ms-transform:rotateX(0deg);transform:rotateX(0deg);}
+}
+.f_bt.animated {-webkit-animation: rotateAnim 0.5s ease-in 0.5s;-moz-animation: rotateAnim 0.5s ease-in 0.5s;-o-animation: rotateAnim 0.5s ease-in 0.5s;-ms-animation: rotateAnim 0.5s ease-in 0.5s;animation: rotateAnim 0.5s ease-in 0.5s;}
 .f02_bt {width: 35.3% !important;} 
 .f03_bt {width: 42.8% !important;}
 .f04_bt {width: 69.8% !important;}
