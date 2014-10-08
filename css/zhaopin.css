@@ -16,7 +16,8 @@ a {text-decoration: none;border: none;outline: none;}
 #frame05 {background-color: #f7941e;}
 #frame02 img, #frame03 img, #frame04 img, #frame05 img {width: 100%;}
 .mt {padding-top: 2%;}
-.f_bt {position: absolute;bottom: 0;left: 5%;}
+.stage {position: absolute;bottom: 0;left: 5%;width: 100%;-webkit-perspective: 1200px;-moz-perspective: 1200px;-o-perspective: 1200px;-ms-perspective: 1200px;perspective: 1200px;}
+.container {-webkit-transform-style: preserve-3d;-moz-transform-style: preserve-3d;-o-transform-style: preserve-3d;-ms-transform-style: preserve-3d;transform-style: preserve-3d;}
 @-webkit-keyframes rotateAnim {
 	0% {-webkit-transform:rotateX(90deg);-moz-transform:rotateX(90deg);-o-transform:rotateX(90deg);-ms-transform:rotateX(90deg);transform:rotateX(90deg);}
 	50% {-webkit-transform:rotateX(45deg);-moz-transform:rotateX(45deg);-o-transform:rotateX(45deg);-ms-transform:rotateX(45deg);transform:rotateX(45deg);}
@@ -42,7 +43,7 @@ a {text-decoration: none;border: none;outline: none;}
 	50% {-webkit-transform:rotateX(45deg);-moz-transform:rotateX(45deg);-o-transform:rotateX(45deg);-ms-transform:rotateX(45deg);transform:rotateX(45deg);}
 	100% {-webkit-transform:rotateX(0deg);-moz-transform:rotateX(0deg);-o-transform:rotateX(0deg);-ms-transform:rotateX(0deg);transform:rotateX(0deg);}
 }
-.f_bt.animated {-webkit-animation: rotateAnim 2s ease-in 0.5s;-moz-animation: rotateAnim 2s ease-in 0.5s;-o-animation: rotateAnim 2s ease-in 0.5s;-ms-animation: rotateAnim 2s ease-in 0.5s;animation: rotateAnim 2s ease-in 0.5s;}
+.f_bt.animated {-webkit-animation: rotateAnim 1s linear 0.5s;-moz-animation: rotateAnim 1s linear 0.5s;-o-animation: rotateAnim 1s linear 0.5s;-ms-animation: rotateAnim 1s linear 0.5s;animation: rotateAnim 1s linear 0.5s;}
 .f02_bt {width: 35.3% !important;} 
 .f03_bt {width: 42.8% !important;}
 .f04_bt {width: 69.8% !important;}
