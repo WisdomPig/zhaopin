@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/zhaopin.css">
 	</head>
 	<body>
+		<div class="page_count"><span id="current">1</span>/<span id="total">10</span></div>
 		<div class="wrapper">
 			<div class="pages">
 				<section class="page" id="frame01">
@@ -191,7 +192,10 @@
 				drag:      true,
 				loading:   false,
 				indicator: false,
-				arrow:     true
+				arrow:     true,
+				onchange: function(index, element, direction) {
+					$('#current').html(index + 1);
+				}
 			});
 		});
 		</script>
