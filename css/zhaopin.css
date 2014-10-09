@@ -14,14 +14,14 @@
 .f04_bt {width: 40% !important;margin-left: 12%;}
 
 .job_wrap {position: relative;width: 100%;height: 100%;background-color: #fee801;}
-.dark_bg {position: absolute;width: 100%;height: 260px;background-color: #5d5d5d;top: 90px;left: 0;z-index: 9;}
-.jt_title {position: absolute;z-index: 10;color: #5d5d5d;font-size: 2.14em;line-height: 40px;font-weight: bold;border-top: 1px solid #5d5d5d;border-right: 1px solid #5d5d5d;border-radius: 0 10px 0 0;top: 50px;}
-.jt_content {position: absolute;z-index: 10;font-size: 1em;color: #fff;top: 95px;}
-.jb_title {position: absolute;z-index: 10;color: #fee801;font-size: 2.14em;line-height: 40px;font-weight: bold;border-top: 1px solid #fee801;border-left: 1px solid #fee801;border-radius: 10px 0 0 0;top: 310px;right: 0;}
-.jb_content {position: absolute;z-index: 10;font-size: 1em;color: #5d5d5d;text-align: right;top: 355px;right: 0;}
+.dark_bg {position: absolute;width: 100%;height: 240px;background-color: #5d5d5d;top: 70px;left: 0;z-index: 9;}
+.jt_title {position: absolute;z-index: 10;color: #5d5d5d;font-size: 2.14em;line-height: 40px;font-weight: bold;border-top: 1px solid #5d5d5d;border-right: 1px solid #5d5d5d;border-radius: 0 10px 0 0;top: 30px;}
+.jt_content {position: absolute;z-index: 10;font-size: 1em;color: #fff;top: 75px;}
+.jb_title {position: absolute;z-index: 10;color: #fee801;font-size: 2.14em;line-height: 40px;font-weight: bold;border-top: 1px solid #fee801;border-left: 1px solid #fee801;border-radius: 10px 0 0 0;top: 270px;right: 0;}
+.jb_content {position: absolute;z-index: 10;font-size: 1em;color: #5d5d5d;text-align: right;top: 315px;right: 0;}
 .detail_btn {position: absolute;z-index: 11;width: 45px;height: 45px;border-radius: 50%;line-height: 45px;text-align: center;}
-.light_btn {background-color: #fee801;color: #5d5d5d;top: 25%;right: 10%;}
-.dark_btn {background-color: #5d5d5d;color: #fee801;top: 71%;left: 10%;}
+.light_btn {background-color: #fee801;color: #5d5d5d;top: 110px;right: 10%;}
+.dark_btn {background-color: #5d5d5d;color: #fee801;top: 360px;left: 10%;}
 
 .job_detail {display: none;width: 100%;height: 100%;position: fixed;top: 0;left: 0;background-color: #5d5d5d;z-index: 999;}
 .job_detail h2 {font-size: 21px;color: #5d5d5d;font-weight: bold;line-height: 40px;text-indent: 18px;background-color: #fee801;}
