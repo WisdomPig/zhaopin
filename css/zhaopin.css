@@ -24,9 +24,9 @@
 .dark_btn {background-color: #5d5d5d;color: #fee801;top: 330px;left: 10%;}
 
 .job_detail {display: none;width: 100%;height: 100%;position: fixed;top: 0;left: 0;background-color: #5d5d5d;z-index: 999;}
-.job_detail h2 {font-size: 21px;color: #5d5d5d;font-weight: bold;line-height: 40px;text-indent: 18px;background-color: #fee801;}
-.job_detail h5 {font-size: 15px;color: #fff;text-indent: 18px;line-height: 30px;}
-.job_detail p {font-size: 12px;color: #fff;text-indent: 0px;padding-left: 18px;line-height: 20px;}
+.job_detail h2 {font-size: 21px;color: #5d5d5d;font-weight: bold;line-height: 40px;text-indent: 10px;background-color: #fee801;}
+.job_detail h5 {font-size: 15px;color: #fff;text-indent: 10px;line-height: 30px;}
+.job_detail p {font-size: 12px;color: #fff;text-indent: 0px;padding: 0 10px;line-height: 20px;}
 .close {position: absolute;width: 8.6%;bottom: 5%;left: 45.8%;}
 
 .email_wrapper {background-color: #fee801;width: 100%;height: 100%;}
