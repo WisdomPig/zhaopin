@@ -203,53 +203,28 @@
 		    (function(){
 		        var share_desc = "骚年，我们有单身妹纸有厨娘有猫奴，等你入伙";
 		        var share_url = "http://wisdompig.github.com/zhaopin";
-		        //var share_img = "http://2shixiong-giftinf.stor.sinaapp.com/index_title_2.png";
-		        //var jump_url = "http://mp.weixin.qq.com/s?__biz=MjM5ODU4OTA2MA==&mid=200533306&idx=1&sn=424b2c54680931e5d031d43890a5ab6b#rd";
+		        var share_img = "http://wisdompig.github.io/zhaopin/img/index-front.png";
 
 		        document.addEventListener("WeixinJSBridgeReady", function(){
 		            WeixinJSBridge.on("menu:share:appmessage",
 		                function(e){
 		                    WeixinJSBridge.invoke("sendAppMessage", {
-		                        //img_url : share_img,
+		                        img_url : share_img,
 		                        link : share_url,
 		                        desc : share_desc,
 		                        title : "我趣旅行招聘"
 		                    }, function(e){
-		                        /*if(typeof $ != "undefined"){
-		                            $.ajax({
-		                                url : "/ajax/baba_tj", 
-		                                data : {
-		                                    type : "首页好友分享"
-		                                },
-		                                type : "GET",
-		                                dataType : "json",
-		                                success : function(){}
-		                            });
-		                        }*/
-		                        //document.location.href = jump_url;
 		                    })
 		                }
 		            ), WeixinJSBridge.on("menu:share:timeline", function(e){
 		                    WeixinJSBridge.invoke("shareTimeline", {
-		                        //img_url : share_img,
+		                        img_url : share_img,
 		                        img_width : "640", 
 		                        img_height : "640", 
 		                        link : share_url,
 		                        desc : share_desc, 
 		                        title : share_desc
 		                    }, function(e){
-		                        /*if(typeof $ != "undefined"){
-		                            $.ajax({
-		                                url : "/ajax/baba_tj", 
-		                                data : {
-		                                    type : "首页朋友圈分享"
-		                                },
-		                                type : "GET",
-		                                dataType : "json",
-		                                success : function(){}
-		                            });
-		                        }*/
-		                        //document.location.href = jump_url;
 		                    })
 		                })
 		        }, !1);
