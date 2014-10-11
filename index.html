@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>我趣旅行招聘</title>
+		<title></title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -200,35 +200,33 @@
 			});
 
 			//wechat api
-		    (function(){
-		        var share_desc = "骚年，我们有单身妹纸有厨娘有猫奴，等你入伙";
-		        var share_url = "http://wisdompig.github.com/zhaopin";
-		        var share_img = "http://wisdompig.github.io/zhaopin/img/index-front.png";
+			(function() {
+				var share_desc = "骚年，我们有单身妹纸有厨娘有猫奴，等你入伙",
+					share_url = "http://wisdompig.github.com/zhaopin",
+					share_img = "http://wisdompig.github.io/zhaopin/img/index-front.png";
 
-		        document.addEventListener("WeixinJSBridgeReady", function(){
-		            WeixinJSBridge.on("menu:share:appmessage",
-		                function(e){
-		                    WeixinJSBridge.invoke("sendAppMessage", {
-		                        img_url : share_img,
-		                        link : share_url,
-		                        desc : share_desc,
-		                        title : "我趣旅行招聘"
-		                    }, function(e){
-		                    })
-		                }
-		            ), WeixinJSBridge.on("menu:share:timeline", function(e){
-		                    WeixinJSBridge.invoke("shareTimeline", {
-		                        img_url : share_img,
-		                        img_width : "640", 
-		                        img_height : "640", 
-		                        link : share_url,
-		                        desc : share_desc, 
-		                        title : share_desc
-		                    }, function(e){
-		                    })
-		                })
-		        }, !1);
-		    })();
+				document.addEventListener("WeixinJSBridgeReady", function() {
+					WeixinJSBridge.on("menu:share:appmessage",
+						function(e) {
+							WeixinJSBridge.invoke("sendAppMessage", {
+								img_url: share_img,
+								link: share_url,
+								desc: share_desc,
+								title: "我趣旅行招聘"
+							}, function(e) {})
+						}
+					), WeixinJSBridge.on("menu:share:timeline", function(e) {
+						WeixinJSBridge.invoke("shareTimeline", {
+							img_url: share_img,
+							img_width: "640",
+							img_height: "640",
+							link: share_url,
+							desc: share_desc,
+							title: share_desc
+						}, function(e) {})
+					})
+				}, !1);
+			})();
 		});
 		</script>
 	</body>
